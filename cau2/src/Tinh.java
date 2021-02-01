@@ -14,7 +14,7 @@ public class Tinh {
     public static void main(String[] args) {
         int a=2,b=3;
         double c=1234,d=567.2;
-        float e=2,f=10;
+        float e=2,f=10.5f;
     Tinh tinh= new Tinh();
     System.out.println("Kieu int");
     tinh.ToanTu(a,b);
