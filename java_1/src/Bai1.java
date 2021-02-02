@@ -1,30 +1,30 @@
 import java.util.Scanner;
 public class Bai1 {
-    public static int g=0;
+    public static int g;
     
-    public  void ToanTu(double a,double b){
+    public  void toanTu(double a,double b){
        
         System.out.println("Tong :" + (a+b)+ "\nHieu :"+(a-b)+"\nTich :"+(a*b)
         +"\nThuong :"+(a/b));
     }
-    public int Tinh_Bieu_Thuc(int a, int b){
+    public int tinh_Bieu_Thuc(int a, int b){
         int c=(a*a+b);
     return c;
     }
 
-    public int Tinh_Phep_Toan_Kieu_Nguyen(int a,int b){
+    public int tinh_Phep_Toan_Kieu_Nguyen(int a,int b){
         return a/b;
     }
 
-    public void Thay_Doi_Gia_tri(int a)
+    public void thay_Doi_Gia_tri(int a)
     {
-        g=g=a;
+        g=g+a;
     }
 
-    public double Thay_Doi_Kieu_Du_Lieu_int_double(int a){
+    public double thay_Doi_Kieu_Du_Lieu_int_double(int a){
     double b=a;
     return b;
-  }  public int Thay_Doi_Kieu_Du_Lieu_double_int(double b){
+  }  public int thay_Doi_Kieu_Du_Lieu_double_int(double b){
     int a=(int)b;
     return a;
   }
@@ -44,26 +44,26 @@ public class Bai1 {
         
     Bai1 tinh= new Bai1();
     System.out.println("\nKieu int a va b");
-    tinh.ToanTu(a,b);
+    tinh.toanTu(a,b);
     System.out.println("Kieu double c va d");
-    tinh.ToanTu(c, d);
+    tinh.toanTu(c, d);
     System.out.println("Kieu float e va f");
-    tinh.ToanTu(e, f);
-    System.out.println("\nGia tri bieu thuc a*a+b="+tinh.Tinh_Bieu_Thuc(a, b));
+    tinh.toanTu(e, f);
+    System.out.println("\nGia tri bieu thuc a*a+b="+tinh.tinh_Bieu_Thuc(a, b));
     
-    System.out.println("\na/b="+tinh.Tinh_Phep_Toan_Kieu_Nguyen(a, b));
+    System.out.println("\na/b="+tinh.tinh_Phep_Toan_Kieu_Nguyen(a, b));
 
     System.out.println("\nCong Tru Nhan Chia hai toan tu khac kieu du lieu:(a-int,c-double)");
-    tinh.ToanTu(a,c);
+    tinh.toanTu(a,c);
 
     System.out.println("\nGia tri ban dau g="+g);
-    tinh.Thay_Doi_Gia_tri(a);
+    tinh.thay_Doi_Gia_tri(a);
     System.out.println("Gia tri thay doi g="+g);
     
     System.out.println("\na(int)="+a);
-    System.out.println("Doi gia tri tu int sang double\n"+tinh.Thay_Doi_Kieu_Du_Lieu_int_double(a));
+    System.out.println("Doi gia tri tu int sang double\n"+tinh.thay_Doi_Kieu_Du_Lieu_int_double(a));
     System.out.println("c(double)="+c);
-    System.out.println("Doi gia tri tu double sang int\n"+tinh.Thay_Doi_Kieu_Du_Lieu_double_int(c));
+    System.out.println("Doi gia tri tu double sang int\n"+tinh.thay_Doi_Kieu_Du_Lieu_double_int(c));
 
 
 
