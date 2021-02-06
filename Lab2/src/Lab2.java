@@ -235,7 +235,7 @@ public class Lab2{
     }
     public void xuatMangChuoi(String[] b){
         for(int i=0;i<n;i++){
-            System.out.println(b[i]+"   (do dai chuoi: "+b[i].length()+")");
+            System.out.println(b[i]+"(do dai chuoi: "+b[i].length()+")");
         }
     }
 
